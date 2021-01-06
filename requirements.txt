@@ -1,5 +1,2 @@
 voila
 ipywidgets
-math
-tkinter
-pickle
