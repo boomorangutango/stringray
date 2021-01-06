@@ -1,1 +1,1 @@
-web: voila --port=$PORT --no-browser --theme=dark
+web: voila --port=$PORT --no-browser
