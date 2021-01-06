@@ -1,1 +1,0 @@
-# Live Load Reduction Test
