@@ -3,3 +3,4 @@ ipywidgets
 numpy
 pandas
 matplotlib
+webbrowser
