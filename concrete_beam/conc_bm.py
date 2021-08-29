@@ -1,4 +1,4 @@
-from concrete_beam_elements import LongReinf, XsectShape, ConcMaterial
+from concrete_beam_elements import LongReinf, XsectShape, ConcMaterial 
 import numpy as np
 import matplotlib.pyplot as plt
 
