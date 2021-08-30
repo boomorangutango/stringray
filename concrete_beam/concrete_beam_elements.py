@@ -55,7 +55,7 @@ class LongReinf(object):
         D = bar_lib[size]['D']
         A = bar_lib[size]['A']
         weight = bar_lib[size]['weight']
-        return D*qty, A*qty, weight*qty
+        return D, A*qty, weight*qty
         
     def run_calc(self):
         self.D, self.A, self.weight = self.get_bar_props(self.size, self.qty)
