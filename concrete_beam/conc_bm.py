@@ -6,14 +6,14 @@ class ConcreteBeam(object):
     def __init__(self):
         self.long_reinf = []
         
-        #  Nominal capacities of the concrete beam section.
+        # Nominal capacities of the concrete beam section.
         self.Pn = 0.0
         self.Mnx = 0.0
         self.Mny = 0.0
         self.Mnx_rc = 0.0
         self.Mny_rc = 0.0
         
-        #  Analytical properties related to the concrete.
+        # Analytical properties related to the concrete.
         self.Fc = None
         self.Mz_conc_rc = None
         self.My_conc_rc = None
