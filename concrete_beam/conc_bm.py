@@ -1,7 +1,6 @@
 from concrete_beam_elements import LongReinf, XsectShape, ConcMaterial
 import numpy as np
 import matplotlib.pyplot as plt
-from bqplot import pyplot as pltbq
 
 class ConcreteBeam(object):
     def __init__(self):
@@ -386,22 +385,6 @@ class ConcreteBeam(object):
         self.phi = self.calc_phi(self.long_reinf)
         self.phi_Mnx = self.phi*self.Mnx
 
-    def plot_bq(self):
-        
-        # Plot section.
-        fig1 = plt.figure(title='Section')
-        # ax1.set_title('Section')
-        # ax1.set_xlabel('x [in]')
-        # ax1.set_ylabel('y [in]')
-        # ax1.invert_yaxis()
-
-        # Plot section shape.
-        shape_verts = np.vstack((self.xsect.verts_nc, self.xsect.verts_nc[0, :]))
-        pltbq.plot(shape_verts[:,0], shape_verts[:,1]) #, marker='.', color='green', label='shape')
-        # plt.show()
-        
-        return fig1
-
     def plot(self):
         
         plt.close("all")
@@ -556,5 +539,4 @@ if __name__ == "__main__":
     beam.new_material()
     beam.run_calc()
     print(beam.phi_Mnx/1000/12)
-    # beam.plot_bq()
     beam.plot()
