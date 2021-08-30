@@ -14,7 +14,7 @@ class ConcreteBeam(object):
         self.Mnx_rc = 0.0
         self.Mny_rc = 0.0
         
-        # Analytical properties related to the concrete.
+        #  Analytical properties related to the concrete.
         self.Fc = None
         self.Mz_conc_rc = None
         self.My_conc_rc = None
