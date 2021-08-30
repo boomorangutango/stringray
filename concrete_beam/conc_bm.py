@@ -521,9 +521,7 @@ class ConcreteBeam(object):
         ax4.axvline(x=0, color='k')
         ax4.grid(True, which='both')
         
-        plt.show()
-
-        return
+        # plt.show()
         
 #%% __main__
 
